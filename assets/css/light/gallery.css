@@ -1,0 +1,317 @@
+html,body{
+    margin: 0;
+    cursor: none;
+    padding: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.header{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    color: #4d4b4b;
+
+}
+h1 span{
+    color: #ffb400;
+}
+a {
+    text-decoration: none;
+  }
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #333333;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #555555;
+  }
+  .sticky-2{
+    display: none;
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .container {
+    animation: slide-down 2s forwards;
+  }
+  .sticky-icon2 {
+    z-index: 1;
+    position: fixed;
+    top: 2%;
+    right: 0%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sticky-icon2 > div {
+    transform: translate(160px, 0px);
+    border-radius: 50px 0px 0px 50px;
+    text-align: left;
+    margin: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: all 0.8s;
+  }
+  .nav-element {
+    background-color: rgb(211, 206, 206);
+    color: #4d4b4b;
+  }
+  
+  .sticky-icon2 i {
+    font-size: 22px;
+    background-color: rgb(211, 206, 206);
+    height: 40px;
+    width: 40px;
+    color: #4d4b4b;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+    transition: all 0.5s;
+  }
+  
+  .sticky-icon {
+    z-index:1;
+    position:fixed;
+    top:25%;
+    right:0%;
+    width:220px;
+    display:flex;
+    flex-direction:column;
+  }
+  .sticky-icon a {transform:translate(160px,0px);
+    border-radius:50px 0px 0px 50px;
+    text-align:left;
+    margin:2px;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:10px;
+    font-size:18px;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    transition:all 0.8s;color: #4d4b4b;}
+  .sticky-icon a:hover  {
+    transform:translate(0px,0px);color: #4d4b4b;}	
+  .sticky-icon a:hover i  {
+    transform:rotate(360deg);color: #4d4b4b;}
+  .nav-element {
+    background-color: rgb(211, 206, 206);
+    margin-bottom: 5% !important;
+  }
+  .sticky-icon > .active {
+    background-color: #ffb400;
+  }
+  .sticky-icon > .active > i {
+    background-color: #ffb400;
+    color: #fff;
+  }
+  
+  .sticky-icon a i {
+    font-size: 22px;
+    background-color: rgb(211, 206, 206);
+    height: 40px;
+    width: 40px;
+    color: #4d4b4b;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+   margin-right: 20px;
+    transition: all 0.5s;
+  }
+  .sticky-2{
+    display: none;
+  }
+.cursor {
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ffb400;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .cursor__follower {
+    transition: transform 0.2s;
+    opacity: 0.5;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+  }
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a{
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4d4b4b;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+
+ul.filters > li.active > a{
+    color: #ffb400;
+}
+
+.card{
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1.5px rgba(0,0,0,0.075);
+    transition: all 1s ease-in-out ;
+    background: transparent;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.card-head{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(67,78,94,0.8);
+    align-items: center;
+    justify-content: center;
+    color :#fff;
+    transition: all 1s ease-in-out ;
+}
+
+
+.card:hover .card-overlay{
+    display: flex;
+    transition: all 1s ease-in-out ;
+}
+.activenav{
+  color: #fff !important;
+}
+
+@media (max-width:992px){
+  .background{
+    display: none;
+  }
+}
+.background{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  opacity: .1;
+  position: absolute;
+}
+.background h1{
+  margin-left: 30%;
+  font-size: 90px;
+  color: #4d4b4b;
+}
+@media(max-width:992px){
+  .sticky-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:0;
+    height: 100px;
+    background-color: rgb(211, 206, 206);
+    z-index: 1000;
+    width: 100%;
+  }
+  .sticky2{
+    z-index:1000;
+  display:flex;
+  justify-content: space-between;
+  width: 90%;
+  }
+  .sticky2 span{
+    display: none;
+  }
+  .sticky2 a {
+    border-radius:50%;
+    text-align:left;
+    margin:2px;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:5px;
+    font-size:15px;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    transition:all 0.8s;}
+    .nav-element {
+      background-color: transparent;
+      margin-bottom: 5% !important;
+      color: #fff;
+    }
+    .sticky2 > .active {
+      background-color: #ffb400;
+    }
+    .sticky2 > .active > i {
+      background-color: #ffb400;
+    }
+    
+    .sticky2 a i {
+      font-size: 17px;
+      background-color: #4d4b4b;
+      height: 40px;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      transition: all 0.5s;
+    }
+    .sticky{
+      display: none;
+    }
+}
