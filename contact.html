@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Project Gallery w/ Filtering - HTML, CSS, Bootstrap, & Isotope</title>
+    <link rel="icon" href="./assets/images/icons8-school-director-48.png" type="image/icon type">
+    <title>Xəyal Şirinov</title>
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link class="style" rel="stylesheet" href="./assets/css/dark/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0/font-awesome-ie7.css"
@@ -95,40 +96,37 @@
                             </ul>
                             <main class="social-buttons">
                                 <div class="round-icons">
-                                    <a href="#"><i class="far fa-envelope"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="mailto:xeyalshirinov93@gmail.com"><i class="far fa-envelope"></i></a>
+                                    <a href="https://www.linkedin.com/in/x%C9%99yal-%C5%9Firinov-702152244"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://wa.me/+994774608249"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </main>
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12 form-div">
-                            <form action="">
+                            <form action="mailto:leman.miriyeva02@mail.ru" method="post" class="contact-form">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12"><input type="email" class="form-control"
-                                            id="exampleInputEmail1" aria-describedby="emailHelp"
-                                            placeholder="Adınız"></div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12"><input type="email" class="form-control"
-                                            id="exampleInputEmail1" aria-describedby="emailHelp"
-                                            placeholder="Soyadınız"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12"><input  type="text" class="form-control input name"
+                                            id="inputName" aria-describedby="emailHelp"
+                                            placeholder="Adınız" required></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12"><input  type="text" class="form-control input form__input"
+                                            id="inputSurname" aria-describedby="emailHelp"
+                                            placeholder="Soyadınız" name="name" required></div>
 
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12"><input type="email" class="form-control"
-                                            id="exampleInputEmail1" aria-describedby="emailHelp"
-                                            placeholder="E-poçt ünvanınız"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12"><input  type="email" class="form-control input email"
+                                            id="inputEmail" aria-describedby="emailHelp"
+                                            placeholder="E-poçt ünvanınız" name="email" required></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12">
-                                        <textarea placeholder="Mesajınız" class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                                        <textarea required placeholder="Mesajınız" name="message" class="form-control message" id="inputMessage" rows="8"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-5">
                                         <a href="" download="apple">
-                                            <div class="download"><button>Göndər</button><span
-                                                class="arrow"><i class="fa fa-arrow-right"
-                                                  aria-hidden="true"></i></span></div>
+                                            <div class="download"><button onclick="sendEmailDefault()" id="email-submit-btn" class="btn--default fill button">Göndər</button></div>
                           
                                           </a>
                                     </div>
@@ -145,7 +143,7 @@
         </div>
 
     </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./assets/js/isotope.min.js"></script>

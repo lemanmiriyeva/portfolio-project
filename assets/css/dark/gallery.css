@@ -1,6 +1,5 @@
 html,body{
     margin: 0;
-    cursor: none;
     padding: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -8,7 +7,7 @@ html,body{
 
 @media (max-width:992px){
   .background{
-    display: none;
+    display: none !important;
   }
 }
 .header{
@@ -74,9 +73,10 @@ a {
       transform: none;
     }
   }
-  
+    
   .container {
     animation: slide-down 2s forwards;
+    margin-bottom: 10% !important;
   }
   .sticky-icon2 {
     z-index: 1;
@@ -170,24 +170,7 @@ a {
   .sticky-2{
     display: none;
   }
-.cursor {
-    left: 0;
-    top: 0;
-    width: 8px;
-    height: 8px;
-    background-color: #ffb400;
-    position: absolute;
-    border-radius: 5px;
-    z-index: 1000;
-  }
-  
-  .cursor__follower {
-    transition: transform 0.2s;
-    opacity: 0.5;
-    width: 40px;
-    border-radius: 50%;
-    height: 40px;
-  }
+
 ul.filters{
     display: block;
     width: 100%;
@@ -254,6 +237,9 @@ ul.filters > li.active > a{
     transition: all 1s ease-in-out ;
 }
 @media(max-width:992px){
+  .container{
+    margin-bottom: 20% !important;
+  }
   .sticky-icon2 > div{
     width: 0;
     background: transparent;

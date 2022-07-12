@@ -39,3 +39,32 @@ mode.addEventListener('click',()=>{
         moon.classList="fas fa-sun"
     }
 })
+
+$("#contact-form").submit(function(event) {
+
+  event.preventDefault();
+
+  var $form = $(this),
+    url = $form.attr('action');
+
+  var posting = $.post(url, {
+    name: $('#name').val(),
+    name2: $('#email').val()
+  });
+
+  posting.done(function(data) {
+    alert('success');
+  });
+});
+
+let message=document.getElementById('inputMessage');
+let email=document.getElementById('inputEmail');
+let name=document.getElementById('inputName');
+let surname=document.getElementById('inputSurname');
+function sendEmailDefault(){
+  var email = "xeyalshirinov93@gmail.com";
+  var subject = name.value+" "+surname.value;
+  var msgBody = message.value;
+  var from=email.value;
+  window.open(`mailto:${email}?from=${from}&subject=${subject}&body=${msgBody}`);
+}

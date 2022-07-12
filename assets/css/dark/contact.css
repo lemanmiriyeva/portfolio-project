@@ -1,6 +1,5 @@
 html,body{
     margin: 0;
-    cursor: none;
     padding: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -161,24 +160,7 @@ a {
   }
   
   
-.cursor {
-    left: 0;
-    top: 0;
-    width: 8px;
-    height: 8px;
-    background-color: #ffb400;
-    position: absolute;
-    border-radius: 5px;
-    z-index: 1000;
-  }
-  
-  .cursor__follower {
-    transition: transform 0.2s;
-    opacity: 0.5;
-    width: 40px;
-    border-radius: 50%;
-    height: 40px;
-  }
+
 .form{
     color: #fff;
 }
@@ -199,7 +181,7 @@ ul li{
 
 @media (max-width:992px){
   .background{
-    display: none;
+    display: none !important;
   }
 }
 .background{
@@ -235,7 +217,7 @@ h4{
     text-transform: uppercase;
     color: rgb(182, 168, 168);
 }
-input,textarea{
+.input,textarea{
     background: #252525 !important;
     padding:25px !important;
     border-radius: 30px !important;
@@ -253,16 +235,16 @@ form{
     box-shadow: none !important;
 }
 .download {
-    border-radius: 40px;
-    background: transparent;
-    border: 1px solid #ffb400;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 0 1%;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-  }
+  border-radius: 40px;
+  background: transparent;
+  border: 1px solid #ffb400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
   .download button {
     border: none;
     height: 50px;
@@ -395,7 +377,6 @@ form{
       margin-top: 5%;
     }
     .container {
-      overflow: hidden !important;
       margin-bottom: 20%;
       
     }
@@ -470,5 +451,27 @@ form{
     
     ul>li{
         justify-content: start !important;
+    }
+  }
+  @media(max-width:768px){
+    .download{
+      margin-top: 20%;
+      margin-bottom: 50%;
+    }
+  }
+  @media(max-width:375px){
+    
+      .download{
+        width: 80%;
+      }
+  }
+  @media(min-width:375px) and (max-width:576px){
+    .download{
+      width: 60%;
+    }
+  }
+  @media(min-width:576px) and (max-width:768px){
+    .download{
+      width:100%;
     }
   }
