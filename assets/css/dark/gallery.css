@@ -4,6 +4,15 @@ html,body{
     background-color: #111;
     overflow-x: hidden;
 }
+.lastResults{
+  height: auto !important;
+}
+
+.center{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width:992px){
   .background{

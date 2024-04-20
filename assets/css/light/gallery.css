@@ -239,6 +239,15 @@ ul.filters > li.active > a{
   font-size: 90px;
   color: #4d4b4b;
 }
+
+.lastResults{
+  height: auto !important;
+}
+.center{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
 @media(max-width:992px){
   .sticky-2{
     display: flex;
@@ -297,4 +306,6 @@ ul.filters > li.active > a{
     .sticky{
       display: none;
     }
+
+    
 }
